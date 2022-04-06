@@ -251,7 +251,7 @@ router.post('/login', async (req, res) => {
 });
 ```
 
-The login endpoint is similar to the registration endpoint. One difficulty is we want to use POST (so we could reserve PUT for modifying a user), but we already have an endpoint for `/`. So we user `/login` instead.
+The login endpoint is similar to the registration endpoint. One difficulty is we want to use POST (so we could reserve PUT for modifying a user), but we already have an endpoint for `/`. So we use `/login` instead.
 
 We also need to look up the username to be sure it exists and then verify that the password matches.  To find a user we use the Mongoose `User.findOne()` function. To verify the password for this user we use the `comparePassword()` function on the User schema that we wrote earlier.
 
