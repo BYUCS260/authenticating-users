@@ -472,6 +472,8 @@ module.exports = {
 }
 ```
 
+The file `vue.config.js` must be in the front-end package.
+
 ## Testing
 
 Let's see if our front end is wired up with our back end correctly. Keep the back end server running in one terminal:
